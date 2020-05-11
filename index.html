@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rest-todoleaan</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app">
+        <header>
+            <h1>Todoolean</h1>
+        </header>
+        <main>
+            <input id="new-todo-input" type="text" placeholder="Inserisci nuovo todo">
+            <button id="new-todo-btn">Inserisci</button>
+            <ul class="todos">
+               
+            </ul>
+        </main>
+    </div>
+
+    <!-- HANDLEBARS TEMPLATES-->
+    <script id="todo-template" type="text/x-handlebars-template">
+        <li class="todo">
+            {{todo}}
+            <span class="remove" data-id="{{ id }}">X</span>
+        </li>
+    </script>
+
+    
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.6/handlebars.min.js'></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

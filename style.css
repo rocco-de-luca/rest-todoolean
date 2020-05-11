@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+}
+
+header{
+    margin-bottom: 30px;
+}
+
+#app{
+    padding: 50px;
+}
+
+.todos{
+    margin: 30px;
+    list-style: none;
+}
+
+.remove{
+    color: red;
+    cursor: pointer;
+}
